@@ -49,12 +49,12 @@ extension NooqodyPaymentSceneInteractor {
 
     func getPaymentLinks() {
 
-        guard let token = self.config?.token, let code = self.config?.code, let desc = self.config?.description, let email = self.config?.customerEmail, let phone = self.config?.customerMobile, let name = self.config?.customerName, let amount = self.config?.amount else {
+        guard let token = self.config?.token, let code = self.config?.projectCode, let clientSecret = self.config?.clientSecret, let desc = self.config?.description, let email = self.config?.customerEmail, let phone = self.config?.customerMobile, let name = self.config?.customerName, let amount = self.config?.amount else {
             return
         }
 
         let patamsString = email+name+phone+desc+code+refrence
-        let secureHash = patamsString.hmac(algorithm: .SHA256, key: Constants().ClientSecret)
+        let secureHash = patamsString.hmac(algorithm: .SHA256, key: clientSecret)
 
         self.worker.getPaymentLink(token: token,
                                    code: code,

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NooqodyPaymentViewController" customModule="NooqodyPay" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NooqodyPaymentViewController" customModule="NoqoodyPay" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndecator" destination="aUR-fY-lwG" id="nOG-jv-Q3l"/>
                 <outlet property="collectionView" destination="gaG-RW-Kee" id="D6V-pz-epZ"/>
@@ -32,27 +32,27 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4h5-Q1-ync">
                             <rect key="frame" x="0.0" y="0.0" width="366" height="754"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Qd-g3S">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Qd-g3S">
                                     <rect key="frame" x="16" y="16" width="134.5" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="YFp-Qd-g3S" secondAttribute="height" multiplier="439:98" id="Lhi-F3-MJm"/>
                                         <constraint firstAttribute="height" constant="30" id="VR6-IQ-gr6"/>
                                     </constraints>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Merchant" translatesAutoresizingMaskIntoConstraints="NO" id="oNM-Fs-ivm">
-                                    <rect key="frame" x="16" y="70" width="44" height="34"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Merchant.png" translatesAutoresizingMaskIntoConstraints="NO" id="oNM-Fs-ivm">
+                                    <rect key="frame" x="16" y="70" width="88" height="34"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="34" id="OTi-jx-37I"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merchant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT4-oG-zUa">
-                                    <rect key="frame" x="68" y="70" width="282" height="16"/>
+                                    <rect key="frame" x="112" y="70" width="238" height="16"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                     <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Merchant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdt-M6-be6">
-                                    <rect key="frame" x="68" y="86" width="282" height="18"/>
+                                    <rect key="frame" x="112" y="86" width="238" height="18"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.29411764709999999" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -91,7 +91,7 @@
                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Safe" translatesAutoresizingMaskIntoConstraints="NO" id="1Pm-n1-EDk">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="safe.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Pm-n1-EDk">
                                             <rect key="frame" x="8" y="8" width="24" height="14"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="24" id="RxM-aW-R01"/>
@@ -327,9 +327,9 @@
         </view>
     </objects>
     <resources>
-        <image name="Logo" width="438.5" height="98"/>
-        <image name="Merchant" width="44" height="39.5"/>
-        <image name="Safe" width="35" height="39.5"/>
+        <image name="Merchant.png" width="88" height="79"/>
+        <image name="logo.png" width="438.5" height="98"/>
+        <image name="safe.png" width="35" height="39.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -6,10 +6,10 @@
 //  Copyright (c) 2021 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-class NooqodyPaymentSceneConfigurator {
+public class NooqodyPaymentSceneConfigurator {
 
-    static func configure(config: ConfigModel) -> NooqodyPaymentViewController {
-        let viewController = NooqodyPaymentViewController()
+    public static func configure(config: ConfigModel) -> NooqodyPaymentViewController {
+        let viewController = NooqodyPaymentViewController.instance()
         let presenter = NooqodyPaymentScenePresenter(displayView: viewController)
         let interactor = NooqodyPaymentSceneInteractor(presenter: presenter)
         let router = NooqodyPaymentSceneRouter(controller: viewController)

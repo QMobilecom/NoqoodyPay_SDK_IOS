@@ -9,7 +9,7 @@
 class PaymentWebSceneConfigurator {
 
     static func configure() -> PaymentWebViewController {
-        let viewController = PaymentWebViewController()
+        let viewController = PaymentWebViewController.instance()
         let presenter = PaymentWebScenePresenter(displayView: viewController)
         let interactor = PaymentWebSceneInteractor(presenter: presenter)
         let router = PaymentWebSceneRouter(controller: viewController)

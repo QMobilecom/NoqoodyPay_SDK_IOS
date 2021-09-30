@@ -67,17 +67,9 @@ extension NooqodyPaymentScenePresenter {
     }
 
     func presentPaymentSuccess(refrence: String, payment: PaymentStatusModel) {
-        guard let transactionId = payment.transactionID else {
-            let viewModel = NooqodyPaymentScene.PaymentFailure.ViewModel(refrence: refrence,
-                                                                     message: "Something Wrong Happen!")
-            self.displayView?.displayPaymentFailure(viewModel: viewModel)
-            return
-        }
-
         switch payment.transactionStatus {
         case .success:
-            let viewModel = NooqodyPaymentScene.PaymentSuccess.ViewModel(refrence: refrence, transactionId: transactionId)
-            self.displayView?.displayPaymentSuccess(viewModel: viewModel)
+            self.displayView?.displayPaymentSuccess(paymentModel: payment)
         case .error:
             let viewModel = NooqodyPaymentScene.PaymentFailure.ViewModel(refrence: refrence,
                                                                       message: payment.transactionMessage ?? "Something Wrong Happen!")

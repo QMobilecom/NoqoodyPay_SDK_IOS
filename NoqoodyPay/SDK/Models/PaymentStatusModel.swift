@@ -7,23 +7,23 @@
 
 import Foundation
 
-enum TransactionStatus: String, Codable {
+public enum TransactionStatus: String, Codable {
     case error
     case success
 }
 
-struct PaymentStatusModel: Codable {
-    let transactionID, responseCode: String?
-    let amount: Int?
-    let transactionStatus: TransactionStatus?
-    let transactionDate, reference, serviceName: String?
-    let mobile, transactionMessage, pun, welcomeDescription: String?
-    let invoiceNo: String?
-    let dollarAmount: Int?
-    let email, payeeName: String?
-    let success: Bool?
-    let code, message: String?
-    let errors: [String]?
+public struct PaymentStatusModel: Codable {
+    public let transactionID, responseCode: String?
+    public let amount: Int?
+    public let transactionStatus: TransactionStatus?
+    public let transactionDate, reference, serviceName: String?
+    public let mobile, transactionMessage, pun, welcomeDescription: String?
+    public let invoiceNo: String?
+    public let dollarAmount: Int?
+    public let email, payeeName: String?
+    public let success: Bool?
+    public let code, message: String?
+    public let errors: [String]?
 
     enum CodingKeys: String, CodingKey {
         case transactionID = "TransactionID"

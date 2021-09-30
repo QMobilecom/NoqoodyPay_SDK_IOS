@@ -8,19 +8,19 @@
 
 import UIKit
 
-protocol NooqodyPaymentDelegate: AnyObject {
-    func paymentSuccess(controller: NooqodyPaymentViewController, refrence: String, transactionId: String)
+public protocol NooqodyPaymentDelegate: AnyObject {
+    func paymentSuccess(controller: NooqodyPaymentViewController, paymentModel: PaymentStatusModel)
     func paymentFailed(controller: NooqodyPaymentViewController, refrence: String, message: String)
 }
 
 protocol NooqodyPaymentSceneDisplayView: AnyObject {
     func displayError(viewModel: NooqodyPaymentScene.PaymentFailure.ViewModel)
     func displayChannels(viewModel: NooqodyPaymentScene.Channels.ViewModel)
-    func displayPaymentSuccess(viewModel: NooqodyPaymentScene.PaymentSuccess.ViewModel)
+    func displayPaymentSuccess(paymentModel: PaymentStatusModel)
     func displayPaymentFailure(viewModel: NooqodyPaymentScene.PaymentFailure.ViewModel)
 }
 
-class NooqodyPaymentViewController: UIViewController {
+public class NooqodyPaymentViewController: UIViewController {
 
     @IBOutlet private weak var activityIndecator: UIActivityIndicatorView!
     @IBOutlet private weak var scrollView: UIScrollView!
@@ -38,7 +38,7 @@ class NooqodyPaymentViewController: UIViewController {
     var viewStore: NooqodyPaymentSceneViewStore!
     var router: NooqodyPaymentSceneRoutingLogic!
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
         self.interactor.getPaymentLinks()
@@ -79,9 +79,9 @@ extension NooqodyPaymentViewController: NooqodyPaymentSceneDisplayView {
         }
     }
 
-    func displayPaymentSuccess(viewModel: NooqodyPaymentScene.PaymentSuccess.ViewModel) {
+    func displayPaymentSuccess(paymentModel: PaymentStatusModel) {
         DispatchQueue.main.async {
-            self.delegate?.paymentSuccess(controller: self,refrence: viewModel.refrence, transactionId: viewModel.transactionId)
+            self.delegate?.paymentSuccess(controller: self, paymentModel: paymentModel)
         }
     }
 
@@ -95,31 +95,31 @@ extension NooqodyPaymentViewController: NooqodyPaymentSceneDisplayView {
 extension NooqodyPaymentViewController {
     func setupView() {
         self.scrollView.isHidden = true
-        self.collectionView.register(UINib(nibName: PaymentChannelCell.cellIdentifier, bundle: nil), forCellWithReuseIdentifier: PaymentChannelCell.cellIdentifier)
+        self.collectionView.register(UINib(nibName: PaymentChannelCell.cellIdentifier, bundle: Bundle(for: PaymentChannelCell.self)), forCellWithReuseIdentifier: PaymentChannelCell.cellIdentifier)
         self.scrollView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 }
 
 extension NooqodyPaymentViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.viewStore.channelsViewModel?.channels.count ?? 0
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PaymentChannelCell.cellIdentifier, for: indexPath) as! PaymentChannelCell
         cell.updateCell(viewModel: (self.viewStore.channelsViewModel?.channels[indexPath.row])!)
         return cell
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let insets: CGFloat = 32
         let width: CGFloat = (collectionView.frame.width - insets) / 3
         let height: CGFloat = width * 0.95
         return CGSize(width: width, height: height)
     }
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.interactor.selectChannel(index: indexPath.row)
     }
 }

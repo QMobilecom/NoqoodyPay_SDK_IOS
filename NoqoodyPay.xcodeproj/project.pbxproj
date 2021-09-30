@@ -7,9 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0BE2E026FA0FFB003E78FD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BE2DF26FA0FFB003E78FD /* UIViewController+Extension.swift */; };
 		DCB9B49226C0AC7900495BFF /* NoqoodyPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB9B48826C0AC7900495BFF /* NoqoodyPay.framework */; };
 		DCB9B49726C0AC7900495BFF /* NoqoodyPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B49626C0AC7900495BFF /* NoqoodyPayTests.swift */; };
 		DCB9B49926C0AC7900495BFF /* NoqoodyPay.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB9B48B26C0AC7900495BFF /* NoqoodyPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCB9B4B826C0B3E300495BFF /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4B226C0B3E300495BFF /* HTTPTask.swift */; };
+		DCB9B4B926C0B3E300495BFF /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4B326C0B3E300495BFF /* EndPointType.swift */; };
+		DCB9B4BA26C0B3E300495BFF /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4B426C0B3E300495BFF /* NetworkLogger.swift */; };
+		DCB9B4BB26C0B3E300495BFF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4B526C0B3E300495BFF /* HTTPMethod.swift */; };
+		DCB9B4BC26C0B3E300495BFF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4B626C0B3E300495BFF /* Router.swift */; };
+		DCB9B4BD26C0B3E300495BFF /* ServicePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4B726C0B3E300495BFF /* ServicePath.swift */; };
+		DCB9B4BF26C0B3ED00495BFF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4BE26C0B3ED00495BFF /* NetworkManager.swift */; };
+		DCB9B4C426C0B3FB00495BFF /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4C026C0B3FB00495BFF /* URLParameterEncoding.swift */; };
+		DCB9B4C526C0B3FB00495BFF /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4C126C0B3FB00495BFF /* ParameterEncoding.swift */; };
+		DCB9B4C626C0B3FB00495BFF /* FormBodyURLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4C226C0B3FB00495BFF /* FormBodyURLEncoding.swift */; };
+		DCB9B4C726C0B3FB00495BFF /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4C326C0B3FB00495BFF /* JSONParameterEncoder.swift */; };
+		DCB9B4C926C0B40600495BFF /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4C826C0B40600495BFF /* ApiRequest.swift */; };
+		DCB9B4CB26C0B40F00495BFF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4CA26C0B40F00495BFF /* Constants.swift */; };
+		DCB9B4CF26C0B41700495BFF /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4CC26C0B41600495BFF /* ImageView+Extension.swift */; };
+		DCB9B4D026C0B41700495BFF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4CD26C0B41600495BFF /* String+Extension.swift */; };
+		DCB9B4D126C0B41700495BFF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4CE26C0B41600495BFF /* UIView+Extension.swift */; };
+		DCB9B4D826C0B42000495BFF /* PaymentStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4D226C0B42000495BFF /* PaymentStatusModel.swift */; };
+		DCB9B4D926C0B42000495BFF /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4D326C0B42000495BFF /* TokenModel.swift */; };
+		DCB9B4DA26C0B42000495BFF /* BaseURLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4D426C0B42000495BFF /* BaseURLConfig.swift */; };
+		DCB9B4DB26C0B42000495BFF /* PaymentChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4D526C0B42000495BFF /* PaymentChannelModel.swift */; };
+		DCB9B4DC26C0B42000495BFF /* ConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4D626C0B42000495BFF /* ConfigModel.swift */; };
+		DCB9B4DD26C0B42000495BFF /* PaymentLinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4D726C0B42000495BFF /* PaymentLinksModel.swift */; };
+		DCB9B4E626C0B43F00495BFF /* NooqodyPaymentSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4E026C0B43E00495BFF /* NooqodyPaymentSceneConfigurator.swift */; };
+		DCB9B4E726C0B43F00495BFF /* NooqodyPaymentSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4E126C0B43E00495BFF /* NooqodyPaymentSceneRouter.swift */; };
+		DCB9B4E826C0B43F00495BFF /* NooqodyPaymentScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4E226C0B43E00495BFF /* NooqodyPaymentScenePresenter.swift */; };
+		DCB9B4E926C0B43F00495BFF /* NooqodyPaymentSceneWorkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4E326C0B43E00495BFF /* NooqodyPaymentSceneWorkers.swift */; };
+		DCB9B4EA26C0B43F00495BFF /* NooqodyPaymentSceneModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4E426C0B43E00495BFF /* NooqodyPaymentSceneModels.swift */; };
+		DCB9B4EB26C0B43F00495BFF /* NooqodyPaymentSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4E526C0B43F00495BFF /* NooqodyPaymentSceneInteractor.swift */; };
+		DCB9B4EF26C0B44B00495BFF /* NooqodyPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB9B4ED26C0B44B00495BFF /* NooqodyPaymentViewController.xib */; };
+		DCB9B4F026C0B44B00495BFF /* NooqodyPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4EE26C0B44B00495BFF /* NooqodyPaymentViewController.swift */; };
+		DCB9B4F426C0B45D00495BFF /* PaymentChannelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB9B4F226C0B45D00495BFF /* PaymentChannelCell.xib */; };
+		DCB9B4F526C0B45D00495BFF /* PaymentChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4F326C0B45D00495BFF /* PaymentChannelCell.swift */; };
+		DCB9B4FB26C0B46B00495BFF /* PaymentWebSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4F626C0B46B00495BFF /* PaymentWebSceneRouter.swift */; };
+		DCB9B4FC26C0B46B00495BFF /* PaymentWebSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4F726C0B46B00495BFF /* PaymentWebSceneInteractor.swift */; };
+		DCB9B4FD26C0B46B00495BFF /* PaymentWebSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4F826C0B46B00495BFF /* PaymentWebSceneConfigurator.swift */; };
+		DCB9B4FE26C0B46B00495BFF /* PaymentWebScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4F926C0B46B00495BFF /* PaymentWebScenePresenter.swift */; };
+		DCB9B4FF26C0B46B00495BFF /* PaymentWebSceneModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B4FA26C0B46B00495BFF /* PaymentWebSceneModels.swift */; };
+		DCB9B50326C0B47700495BFF /* PaymentWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9B50126C0B47700495BFF /* PaymentWebViewController.swift */; };
+		DCB9B50426C0B47700495BFF /* PaymentWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB9B50226C0B47700495BFF /* PaymentWebViewController.xib */; };
+		DCD5BAE1270312BE00D6AB25 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD5BADE270312BE00D6AB25 /* logo.png */; };
+		DCD5BAE2270312BE00D6AB25 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD5BADF270312BE00D6AB25 /* logo@2x.png */; };
+		DCD5BAE3270312BE00D6AB25 /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD5BAE0270312BE00D6AB25 /* logo@3x.png */; };
+		DCD5BAE5270312CE00D6AB25 /* Merchant.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD5BAE4270312CE00D6AB25 /* Merchant.png */; };
+		DCD5BAE9270312EC00D6AB25 /* safe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD5BAE6270312EC00D6AB25 /* safe@2x.png */; };
+		DCD5BAEA270312EC00D6AB25 /* safe@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD5BAE7270312EC00D6AB25 /* safe@3x.png */; };
+		DCD5BAEB270312EC00D6AB25 /* safe.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD5BAE8270312EC00D6AB25 /* safe.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +70,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC0BE2DF26FA0FFB003E78FD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DCB9B48826C0AC7900495BFF /* NoqoodyPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoqoodyPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB9B48B26C0AC7900495BFF /* NoqoodyPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoqoodyPay.h; sourceTree = "<group>"; };
 		DCB9B48C26C0AC7900495BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCB9B49126C0AC7900495BFF /* NoqoodyPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoqoodyPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB9B49626C0AC7900495BFF /* NoqoodyPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoqoodyPayTests.swift; sourceTree = "<group>"; };
 		DCB9B49826C0AC7900495BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB9B4B226C0B3E300495BFF /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		DCB9B4B326C0B3E300495BFF /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		DCB9B4B426C0B3E300495BFF /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		DCB9B4B526C0B3E300495BFF /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		DCB9B4B626C0B3E300495BFF /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DCB9B4B726C0B3E300495BFF /* ServicePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicePath.swift; sourceTree = "<group>"; };
+		DCB9B4BE26C0B3ED00495BFF /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DCB9B4C026C0B3FB00495BFF /* URLParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
+		DCB9B4C126C0B3FB00495BFF /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		DCB9B4C226C0B3FB00495BFF /* FormBodyURLEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormBodyURLEncoding.swift; sourceTree = "<group>"; };
+		DCB9B4C326C0B3FB00495BFF /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		DCB9B4C826C0B40600495BFF /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		DCB9B4CA26C0B40F00495BFF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DCB9B4CC26C0B41600495BFF /* ImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
+		DCB9B4CD26C0B41600495BFF /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DCB9B4CE26C0B41600495BFF /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		DCB9B4D226C0B42000495BFF /* PaymentStatusModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentStatusModel.swift; sourceTree = "<group>"; };
+		DCB9B4D326C0B42000495BFF /* TokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		DCB9B4D426C0B42000495BFF /* BaseURLConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseURLConfig.swift; sourceTree = "<group>"; };
+		DCB9B4D526C0B42000495BFF /* PaymentChannelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentChannelModel.swift; sourceTree = "<group>"; };
+		DCB9B4D626C0B42000495BFF /* ConfigModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigModel.swift; sourceTree = "<group>"; };
+		DCB9B4D726C0B42000495BFF /* PaymentLinksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentLinksModel.swift; sourceTree = "<group>"; };
+		DCB9B4E026C0B43E00495BFF /* NooqodyPaymentSceneConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NooqodyPaymentSceneConfigurator.swift; sourceTree = "<group>"; };
+		DCB9B4E126C0B43E00495BFF /* NooqodyPaymentSceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NooqodyPaymentSceneRouter.swift; sourceTree = "<group>"; };
+		DCB9B4E226C0B43E00495BFF /* NooqodyPaymentScenePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NooqodyPaymentScenePresenter.swift; sourceTree = "<group>"; };
+		DCB9B4E326C0B43E00495BFF /* NooqodyPaymentSceneWorkers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NooqodyPaymentSceneWorkers.swift; sourceTree = "<group>"; };
+		DCB9B4E426C0B43E00495BFF /* NooqodyPaymentSceneModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NooqodyPaymentSceneModels.swift; sourceTree = "<group>"; };
+		DCB9B4E526C0B43F00495BFF /* NooqodyPaymentSceneInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NooqodyPaymentSceneInteractor.swift; sourceTree = "<group>"; };
+		DCB9B4ED26C0B44B00495BFF /* NooqodyPaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NooqodyPaymentViewController.xib; sourceTree = "<group>"; };
+		DCB9B4EE26C0B44B00495BFF /* NooqodyPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NooqodyPaymentViewController.swift; sourceTree = "<group>"; };
+		DCB9B4F226C0B45D00495BFF /* PaymentChannelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentChannelCell.xib; sourceTree = "<group>"; };
+		DCB9B4F326C0B45D00495BFF /* PaymentChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentChannelCell.swift; sourceTree = "<group>"; };
+		DCB9B4F626C0B46B00495BFF /* PaymentWebSceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentWebSceneRouter.swift; sourceTree = "<group>"; };
+		DCB9B4F726C0B46B00495BFF /* PaymentWebSceneInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentWebSceneInteractor.swift; sourceTree = "<group>"; };
+		DCB9B4F826C0B46B00495BFF /* PaymentWebSceneConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentWebSceneConfigurator.swift; sourceTree = "<group>"; };
+		DCB9B4F926C0B46B00495BFF /* PaymentWebScenePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentWebScenePresenter.swift; sourceTree = "<group>"; };
+		DCB9B4FA26C0B46B00495BFF /* PaymentWebSceneModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentWebSceneModels.swift; sourceTree = "<group>"; };
+		DCB9B50126C0B47700495BFF /* PaymentWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentWebViewController.swift; sourceTree = "<group>"; };
+		DCB9B50226C0B47700495BFF /* PaymentWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentWebViewController.xib; sourceTree = "<group>"; };
+		DCD5BADE270312BE00D6AB25 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		DCD5BADF270312BE00D6AB25 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		DCD5BAE0270312BE00D6AB25 /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
+		DCD5BAE4270312CE00D6AB25 /* Merchant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Merchant.png; sourceTree = "<group>"; };
+		DCD5BAE6270312EC00D6AB25 /* safe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safe@2x.png"; sourceTree = "<group>"; };
+		DCD5BAE7270312EC00D6AB25 /* safe@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safe@3x.png"; sourceTree = "<group>"; };
+		DCD5BAE8270312EC00D6AB25 /* safe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = safe.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +165,7 @@
 		DCB9B48A26C0AC7900495BFF /* NoqoodyPay */ = {
 			isa = PBXGroup;
 			children = (
+				DCB9B4A826C0B37900495BFF /* SDK */,
 				DCB9B48B26C0AC7900495BFF /* NoqoodyPay.h */,
 				DCB9B48C26C0AC7900495BFF /* Info.plist */,
 			);
@@ -84,6 +179,180 @@
 				DCB9B49826C0AC7900495BFF /* Info.plist */,
 			);
 			path = NoqoodyPayTests;
+			sourceTree = "<group>";
+		};
+		DCB9B4A826C0B37900495BFF /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				DCD5BADD270312AA00D6AB25 /* Photos */,
+				DCB9B4AE26C0B3BC00495BFF /* Network */,
+				DCB9B4AD26C0B3B200495BFF /* Modules */,
+				DCB9B4AC26C0B3A400495BFF /* Models */,
+				DCB9B4AB26C0B39B00495BFF /* Extensions */,
+				DCB9B4AA26C0B39100495BFF /* Constant */,
+				DCB9B4A926C0B38800495BFF /* ApiRequest */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		DCB9B4A926C0B38800495BFF /* ApiRequest */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4C826C0B40600495BFF /* ApiRequest.swift */,
+			);
+			path = ApiRequest;
+			sourceTree = "<group>";
+		};
+		DCB9B4AA26C0B39100495BFF /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4CA26C0B40F00495BFF /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		DCB9B4AB26C0B39B00495BFF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4CC26C0B41600495BFF /* ImageView+Extension.swift */,
+				DCB9B4CD26C0B41600495BFF /* String+Extension.swift */,
+				DCB9B4CE26C0B41600495BFF /* UIView+Extension.swift */,
+				DC0BE2DF26FA0FFB003E78FD /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCB9B4AC26C0B3A400495BFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4D426C0B42000495BFF /* BaseURLConfig.swift */,
+				DCB9B4D626C0B42000495BFF /* ConfigModel.swift */,
+				DCB9B4D526C0B42000495BFF /* PaymentChannelModel.swift */,
+				DCB9B4D726C0B42000495BFF /* PaymentLinksModel.swift */,
+				DCB9B4D226C0B42000495BFF /* PaymentStatusModel.swift */,
+				DCB9B4D326C0B42000495BFF /* TokenModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCB9B4AD26C0B3B200495BFF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4DF26C0B43300495BFF /* PaymentWebScene */,
+				DCB9B4DE26C0B42B00495BFF /* PaymentList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DCB9B4AE26C0B3BC00495BFF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4B126C0B3D800495BFF /* Service */,
+				DCB9B4B026C0B3D000495BFF /* Manager */,
+				DCB9B4AF26C0B3C700495BFF /* Encoding */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DCB9B4AF26C0B3C700495BFF /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4C226C0B3FB00495BFF /* FormBodyURLEncoding.swift */,
+				DCB9B4C326C0B3FB00495BFF /* JSONParameterEncoder.swift */,
+				DCB9B4C126C0B3FB00495BFF /* ParameterEncoding.swift */,
+				DCB9B4C026C0B3FB00495BFF /* URLParameterEncoding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		DCB9B4B026C0B3D000495BFF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4BE26C0B3ED00495BFF /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DCB9B4B126C0B3D800495BFF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4B326C0B3E300495BFF /* EndPointType.swift */,
+				DCB9B4B526C0B3E300495BFF /* HTTPMethod.swift */,
+				DCB9B4B226C0B3E300495BFF /* HTTPTask.swift */,
+				DCB9B4B426C0B3E300495BFF /* NetworkLogger.swift */,
+				DCB9B4B626C0B3E300495BFF /* Router.swift */,
+				DCB9B4B726C0B3E300495BFF /* ServicePath.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DCB9B4DE26C0B42B00495BFF /* PaymentList */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4EC26C0B44100495BFF /* Views */,
+				DCB9B4E026C0B43E00495BFF /* NooqodyPaymentSceneConfigurator.swift */,
+				DCB9B4E526C0B43F00495BFF /* NooqodyPaymentSceneInteractor.swift */,
+				DCB9B4E426C0B43E00495BFF /* NooqodyPaymentSceneModels.swift */,
+				DCB9B4E226C0B43E00495BFF /* NooqodyPaymentScenePresenter.swift */,
+				DCB9B4E126C0B43E00495BFF /* NooqodyPaymentSceneRouter.swift */,
+				DCB9B4E326C0B43E00495BFF /* NooqodyPaymentSceneWorkers.swift */,
+			);
+			path = PaymentList;
+			sourceTree = "<group>";
+		};
+		DCB9B4DF26C0B43300495BFF /* PaymentWebScene */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B50026C0B46F00495BFF /* Views */,
+				DCB9B4F826C0B46B00495BFF /* PaymentWebSceneConfigurator.swift */,
+				DCB9B4F726C0B46B00495BFF /* PaymentWebSceneInteractor.swift */,
+				DCB9B4FA26C0B46B00495BFF /* PaymentWebSceneModels.swift */,
+				DCB9B4F926C0B46B00495BFF /* PaymentWebScenePresenter.swift */,
+				DCB9B4F626C0B46B00495BFF /* PaymentWebSceneRouter.swift */,
+			);
+			path = PaymentWebScene;
+			sourceTree = "<group>";
+		};
+		DCB9B4EC26C0B44100495BFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4F126C0B45200495BFF /* PaymentChannelCell */,
+				DCB9B4EE26C0B44B00495BFF /* NooqodyPaymentViewController.swift */,
+				DCB9B4ED26C0B44B00495BFF /* NooqodyPaymentViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCB9B4F126C0B45200495BFF /* PaymentChannelCell */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B4F326C0B45D00495BFF /* PaymentChannelCell.swift */,
+				DCB9B4F226C0B45D00495BFF /* PaymentChannelCell.xib */,
+			);
+			path = PaymentChannelCell;
+			sourceTree = "<group>";
+		};
+		DCB9B50026C0B46F00495BFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9B50126C0B47700495BFF /* PaymentWebViewController.swift */,
+				DCB9B50226C0B47700495BFF /* PaymentWebViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCD5BADD270312AA00D6AB25 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				DCD5BAE8270312EC00D6AB25 /* safe.png */,
+				DCD5BAE6270312EC00D6AB25 /* safe@2x.png */,
+				DCD5BAE7270312EC00D6AB25 /* safe@3x.png */,
+				DCD5BAE4270312CE00D6AB25 /* Merchant.png */,
+				DCD5BADE270312BE00D6AB25 /* logo.png */,
+				DCD5BADF270312BE00D6AB25 /* logo@2x.png */,
+				DCD5BAE0270312BE00D6AB25 /* logo@3x.png */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +416,7 @@
 				TargetAttributes = {
 					DCB9B48726C0AC7900495BFF = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					DCB9B49026C0AC7900495BFF = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -177,6 +447,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD5BAEA270312EC00D6AB25 /* safe@3x.png in Resources */,
+				DCD5BAE2270312BE00D6AB25 /* logo@2x.png in Resources */,
+				DCD5BAE5270312CE00D6AB25 /* Merchant.png in Resources */,
+				DCD5BAE1270312BE00D6AB25 /* logo.png in Resources */,
+				DCB9B4F426C0B45D00495BFF /* PaymentChannelCell.xib in Resources */,
+				DCB9B50426C0B47700495BFF /* PaymentWebViewController.xib in Resources */,
+				DCD5BAEB270312EC00D6AB25 /* safe.png in Resources */,
+				DCD5BAE3270312BE00D6AB25 /* logo@3x.png in Resources */,
+				DCB9B4EF26C0B44B00495BFF /* NooqodyPaymentViewController.xib in Resources */,
+				DCD5BAE9270312EC00D6AB25 /* safe@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +474,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB9B4C526C0B3FB00495BFF /* ParameterEncoding.swift in Sources */,
+				DCB9B4D926C0B42000495BFF /* TokenModel.swift in Sources */,
+				DCB9B4C426C0B3FB00495BFF /* URLParameterEncoding.swift in Sources */,
+				DCB9B4E826C0B43F00495BFF /* NooqodyPaymentScenePresenter.swift in Sources */,
+				DCB9B4D126C0B41700495BFF /* UIView+Extension.swift in Sources */,
+				DCB9B4D826C0B42000495BFF /* PaymentStatusModel.swift in Sources */,
+				DCB9B4FD26C0B46B00495BFF /* PaymentWebSceneConfigurator.swift in Sources */,
+				DCB9B4C926C0B40600495BFF /* ApiRequest.swift in Sources */,
+				DCB9B4BB26C0B3E300495BFF /* HTTPMethod.swift in Sources */,
+				DCB9B4E926C0B43F00495BFF /* NooqodyPaymentSceneWorkers.swift in Sources */,
+				DCB9B4BA26C0B3E300495BFF /* NetworkLogger.swift in Sources */,
+				DCB9B4EB26C0B43F00495BFF /* NooqodyPaymentSceneInteractor.swift in Sources */,
+				DCB9B50326C0B47700495BFF /* PaymentWebViewController.swift in Sources */,
+				DCB9B4C726C0B3FB00495BFF /* JSONParameterEncoder.swift in Sources */,
+				DCB9B4C626C0B3FB00495BFF /* FormBodyURLEncoding.swift in Sources */,
+				DCB9B4FB26C0B46B00495BFF /* PaymentWebSceneRouter.swift in Sources */,
+				DCB9B4E626C0B43F00495BFF /* NooqodyPaymentSceneConfigurator.swift in Sources */,
+				DCB9B4F026C0B44B00495BFF /* NooqodyPaymentViewController.swift in Sources */,
+				DCB9B4DD26C0B42000495BFF /* PaymentLinksModel.swift in Sources */,
+				DCB9B4DC26C0B42000495BFF /* ConfigModel.swift in Sources */,
+				DCB9B4CB26C0B40F00495BFF /* Constants.swift in Sources */,
+				DCB9B4BD26C0B3E300495BFF /* ServicePath.swift in Sources */,
+				DC0BE2E026FA0FFB003E78FD /* UIViewController+Extension.swift in Sources */,
+				DCB9B4EA26C0B43F00495BFF /* NooqodyPaymentSceneModels.swift in Sources */,
+				DCB9B4DB26C0B42000495BFF /* PaymentChannelModel.swift in Sources */,
+				DCB9B4E726C0B43F00495BFF /* NooqodyPaymentSceneRouter.swift in Sources */,
+				DCB9B4BF26C0B3ED00495BFF /* NetworkManager.swift in Sources */,
+				DCB9B4FE26C0B46B00495BFF /* PaymentWebScenePresenter.swift in Sources */,
+				DCB9B4BC26C0B3E300495BFF /* Router.swift in Sources */,
+				DCB9B4F526C0B45D00495BFF /* PaymentChannelCell.swift in Sources */,
+				DCB9B4FF26C0B46B00495BFF /* PaymentWebSceneModels.swift in Sources */,
+				DCB9B4B926C0B3E300495BFF /* EndPointType.swift in Sources */,
+				DCB9B4CF26C0B41700495BFF /* ImageView+Extension.swift in Sources */,
+				DCB9B4D026C0B41700495BFF /* String+Extension.swift in Sources */,
+				DCB9B4DA26C0B42000495BFF /* BaseURLConfig.swift in Sources */,
+				DCB9B4B826C0B3E300495BFF /* HTTPTask.swift in Sources */,
+				DCB9B4FC26C0B46B00495BFF /* PaymentWebSceneInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +658,8 @@
 		DCB9B49D26C0AC7900495BFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EJV3Q736AM;
@@ -357,6 +676,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.qmobile.NoqoodyPay;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +685,8 @@
 		DCB9B49E26C0AC7900495BFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EJV3Q736AM;
@@ -389,6 +711,7 @@
 		DCB9B4A026C0AC7900495BFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJV3Q736AM;
 				INFOPLIST_FILE = NoqoodyPayTests/Info.plist;
@@ -407,6 +730,7 @@
 		DCB9B4A126C0AC7900495BFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJV3Q736AM;
 				INFOPLIST_FILE = NoqoodyPayTests/Info.plist;
