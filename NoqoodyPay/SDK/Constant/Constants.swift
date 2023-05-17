@@ -10,7 +10,7 @@ import Foundation
 struct Constants {
 
     enum BASEURL: String {
-        case stagingEnvironment = "http://151.106.28.182:9222"
-        case productionEnvironment = "https://www.noqoodypay.com/sdk"
+        case stagingEnvironment = "https://sandbox.enoqoody.com/"
+        case productionEnvironment = "https://noqoodypay.com/sdk/"
     }
 }
