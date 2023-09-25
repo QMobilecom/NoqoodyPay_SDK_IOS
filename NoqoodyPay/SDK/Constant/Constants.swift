@@ -12,6 +12,6 @@ struct Constants {
 
     enum BASEURL: String {
         case stagingEnvironment = "https://sandbox.enoqoody.com/"
-        case productionEnvironment = " https://noq-qrc-applepay.azurewebsites.net/"
+        case productionEnvironment = "https://noq-qrc-applepay.azurewebsites.net/"
     }
 }
