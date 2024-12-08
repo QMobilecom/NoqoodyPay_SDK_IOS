@@ -63,7 +63,7 @@ extension NooqodyPaymentSceneInteractor {
             return
         }
 
-        let patamsString = email+name+phone+desc+code+refrence
+        let patamsString = email+name+phone+desc+code+refrence+amount.description
         let secureHash = patamsString.hmac(algorithm: .SHA256, key: clientSecret)
 
         self.worker.getPaymentLink(token: token,
